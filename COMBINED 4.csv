@@ -1,0 +1,9 @@
+Mapped #,Transforms,Fusion,Metrics
+1,bandelet,mean,mutual information
+2,contourlet,max,Tsallis
+3,curvelet,min ,Nonlinear
+4,DD DWT,linear,grad-based
+5,DT DWT,random,multi-scale
+6,DWT,up-down,spatial frequency
+7,,down-up,phase congruency 
+8,,,Piella's metric
