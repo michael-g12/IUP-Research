@@ -1,0 +1,34 @@
+,Gradient based,,,multiscale,,,MI,,,nonlinear,,,phase congruency,,,piella's,,,spatial frequency,,,tsallis,,
+,names,estimates,pvalues,names,estimates,pvalues,names,estimates,pvalues,names,estimates,pvalues,names,estimates,pvalues,names,estimates,pvalues,names,estimates,pvalues,names,estimates,pvalues
+1,Max - Mean,-8.64E-05,0,Max - Mean,-0.0015074286,0,Max - Mean,-0.0523868571,0,Max - Mean,-0.0213391429,0,Max - Mean,-0.0280865714,0,Max - Mean,0.00016722,0,Max - Mean,1.14E-05,0,Max - Mean,-0.0034611429,
+2,Min - Mean,-0.00010378,0,Min - Mean,-0.0016528571,0,Min - Mean,-0.0579685714,0,Min - Mean,-0.0268294286,0,Min - Mean,-0.015994,0,Min - Mean,-0.0001671343,0,Min - Mean,9.43E-06,0,Min - Mean,0.0057754286,0
+3,Lin - Mean,-0.0001450057,0,Lin - Mean,-0.001984,0,Lin - Mean,-0.0730251429,0,Lin - Mean,-0.0276602857,0,Lin - Mean,-0.0404997143,0,Lin - Mean,-4.08E-05,0,Lin - Mean,2.54E-05,0,Lin - Mean,0.0005974286,0.8703992792
+4,Ran - Mean,-0.0003014429,0,Ran - Mean,-0.0027571429,0,Ran - Mean,-0.0953934286,0,Ran - Mean,-0.0391831429,0,Ran - Mean,-0.0670982857,0,Ran - Mean,7.91E-07,0.9995315948,Ran - Mean,3.37E-05,0,Ran - Mean,-0.0040222857,
+5,UD - Mean,-8.62E-05,0,UD - Mean,-0.0013648571,0,UD - Mean,-0.048764,0,UD - Mean,-0.02045,0,UD - Mean,-0.025564,0,UD - Mean,-2.58E-05,0,UD - Mean,1.23E-05,0,UD - Mean,0.0040345714,
+6,DU - Mean,-3.24E-05,0,DU - Mean,-0.0007997143,0,DU - Mean,-0.0276208571,0,DU - Mean,-0.0078474286,0,DU - Mean,-0.002076,0.0490374924,DU - Mean,7.57E-06,,DU - Mean,6.00E-06,0,DU - Mean,-0.0032288571,
+7,Min - Max,-1.74E-05,,Min - Max,-0.0001454286,,Min - Max,-0.0055817143,,Min - Max,-0.0054902857,,Min - Max,0.0120925714,0,Min - Max,-0.0003343543,0,Min - Max,-2.00E-06,0.0407049369,Min - Max,0.0092365714,0
+8,Lin - Max,-5.86E-05,0,Lin - Max,-0.0004765714,0,Lin - Max,-0.0206382857,0,Lin - Max,-0.0063211429,,Lin - Max,-0.0124131429,0,Lin - Max,-0.0002080029,0,Lin - Max,1.40E-05,0,Lin - Max,0.0040585714,0
+9,Ran - Max,-0.0002150171,0,Ran - Max,-0.0012497143,0,Ran - Max,-0.0430065714,0,Ran - Max,-0.017844,0,Ran - Max,-0.0390117143,0,Ran - Max,-0.0001664286,0,Ran - Max,2.23E-05,0,Ran - Max,-0.0005611429,0.9008174107
+10,UD - Max,2.29E-07,0.9999999766,UD - Max,0.0001425714,,UD - Max,0.0036228571,,UD - Max,0.0008891429,0.9135270489,UD - Max,0.0025225714,,UD - Max,-0.0001930629,0,UD - Max,8.57E-07,0.8543156331,UD - Max,0.0074957143,0
+11,DU - Max,5.40E-05,0,DU - Max,0.0007077143,0,DU - Max,0.024766,0,DU - Max,0.0134917143,0,DU - Max,0.0260105714,0,DU - Max,-0.0001596543,0,DU - Max,-5.43E-06,,DU - Max,0.0002322857,0.9989902861
+12,Lin - Min,-4.12E-05,0,Lin - Min,-0.0003311429,0,Lin - Min,-0.0150565714,0,Lin - Min,-0.0008308571,0.936505649,Lin - Min,-0.0245057143,0,Lin - Min,0.0001263514,0,Lin - Min,1.60E-05,0,Lin - Min,-0.005178,0
+13,Ran - Min,-0.0001976629,0,Ran - Min,-0.0011042857,0,Ran - Min,-0.0374248571,0,Ran - Min,-0.0123537143,0,Ran - Min,-0.0511042857,0,Ran - Min,0.0001679257,0,Ran - Min,2.43E-05,0,Ran - Min,-0.0097977143,0
+14,UD - Min,1.76E-05,,UD - Min,0.000288,0,UD - Min,0.0092045714,0,UD - Min,0.0063794286,,UD - Min,-0.00957,0,UD - Min,0.0001412914,0,UD - Min,2.86E-06,,UD - Min,-0.0017408571,
+15,DU - Min,7.14E-05,0,DU - Min,0.0008531429,0,DU - Min,0.0303477143,0,DU - Min,0.018982,0,DU - Min,0.013918,0,DU - Min,0.0001747,0,DU - Min,-3.43E-06,,DU - Min,-0.0090042857,0
+16,Ran - Lin,-0.0001564371,0,Ran - Lin,-0.0007731429,0,Ran - Lin,-0.0223682857,0,Ran - Lin,-0.0115228571,0,Ran - Lin,-0.0265985714,0,Ran - Lin,4.16E-05,0,Ran - Lin,8.29E-06,0,Ran - Lin,-0.0046197143,0
+17,UD - Lin,5.88E-05,0,UD - Lin,0.0006191429,0,UD - Lin,0.0242611429,0,UD - Lin,0.0072102857,0,UD - Lin,0.0149357143,0,UD - Lin,1.49E-05,,UD - Lin,-1.31E-05,0,UD - Lin,0.0034371429,
+18,DU - Lin,0.0001126086,0,DU - Lin,0.0011842857,0,DU - Lin,0.0454042857,0,DU - Lin,0.0198128571,0,DU - Lin,0.0384237143,0,DU - Lin,4.83E-05,0,DU - Lin,-1.94E-05,0,DU - Lin,-0.0038262857,
+19,UD - Ran,0.0002152457,0,UD - Ran,0.0013922857,0,UD - Ran,0.0466294286,0,UD - Ran,0.0187331429,0,UD - Ran,0.0415342857,0,UD - Ran,-2.66E-05,0,UD - Ran,-2.14E-05,0,UD - Ran,0.0080568571,0
+20,DU - Ran,0.0002690457,0,DU - Ran,0.0019574286,0,DU - Ran,0.0677725714,0,DU - Ran,0.0313357143,0,DU - Ran,0.0650222857,0,DU - Ran,6.77E-06,,DU - Ran,-2.77E-05,0,DU - Ran,0.0007934286,0.6345954911
+21,DU - UD,5.38E-05,0,DU - UD,0.0005651429,0,DU - UD,0.0211431429,0,DU - UD,0.0126025714,0,DU - UD,0.023488,0,DU - UD,3.34E-05,0,DU - UD,-6.29E-06,0,DU - UD,-0.0072634286,0
+,,,,,,,,,,,,,,,,,,,,,,,,
+,i,j,k,,,,,,,,,,,,,,,,,,,,,
+Mapped #,Transforms,Fusion,Metrics,,,,,,,,,,,,,,,,,,,,,
+1,bandelet,mean,mutual information,,,,,,,,,,,,,,,,,,,,,
+2,contourlet,max,Tsallis,,,,,,,,,,,,,,,,,,,,,
+3,curvelet,min ,Nonlinear,,,,,,,,,,,,,,,,,,,,,
+4,DD DWT,linear,grad-based,,,,,,,,,,,,,,,,,,,,,
+5,DT DWT,random,multi-scale,,,,,,,,,,,,,,,,,,,,,
+6,DWT,up-down,spatial frequency,,,,,,,,,,,,,,,,,,,,,
+7,,down-up,phase congruency ,,,,,,,,,,,,,,,,,,,,,
+8,,,Piella's metric,,,,,,,,,,,,,,,,,,,,,
