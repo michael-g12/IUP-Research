@@ -1,0 +1,82 @@
+#R CODE Using RStudio
+#file name on line 50 will have to be changed to desired storage place for results 
+#the data file will need to be present somewhere in order to be selected by the data=read.csv command.
+
+library(multcomp)
+library(xlsx)
+data = read.csv(file.choose())
+
+data$Transform = factor(data$Transform)
+data$Detail = factor(data$Detail)
+data$Approximate = factor(data$Approximate)
+levels(data$Transform) = c("B", "Co","Cu","DD", "DT" , "W")
+levels(data$Detail) = c("Mean","Max", "Min", "Lin", "Ran", "UD","DU")
+levels(data$Approximate) = c("Mean","Max", "Min", "Lin", "Ran", "UD","DU")
+levels(data$Metric) = c("Mutual Information", "Tsallis Entropy", "Nonlinear Correlation", "Gradient-Based", "Multiscale", "Spatial Frequency", "Phase Congruency", "Piella's Metric")
+
+mi = subset(data, Metric == 1)
+mi = mi[c(1,2,3,5)]
+t = subset(data, Metric == 2)
+t = t[c(1,2,3,5)]
+nl = subset(data, Metric == 3)
+nl = nl[c(1,2,3,5)]
+g = subset(data, Metric == 4)
+g = g[c(1,2,3,5)]
+ms = subset(data, Metric == 5)
+ms = ms[c(1,2,3,5)]
+sf = subset(data, Metric == 6)
+sf = sf[c(1,2,3,5)]
+pc = subset(data, Metric == 7)
+pc = pc[c(1,2,3,5)]
+p = subset(data, Metric == 8)
+p = p[c(1,2,3,5)]
+
+k = 1
+metricVector = rbind("mi","t","nl","g","ms","sf","pc","p")
+
+for (string in metricVector) {
+  metric = eval(parse(text = string))
+  
+  fit = lm(Value~Transform+Detail, data = metric )
+  fit1 = lm(Value~Transform+Detail+Approximate, data = metric )
+  
+  transformTest = glht(fit, linfct = mcp(Transform = "Tukey"))
+  tt = summary(transformTest)
+  
+  names = names(tt$test$coefficients)
+  pvalues = tt$test$pvalues
+  
+  write = rbind(names, pvalues)
+  filestring = sprintf("C:/Users/IUP/Documents/R/VectorAnalysis/R Analysis data/%s.xlsx", levels(data$Metric)[k])
+  write.xlsx(t(write),filestring)
+  
+  print(tt)
+  
+  detailTest = glht(fit,linfct = mcp(Detail = "Tukey"))
+  tt = summary(detailTest)
+
+  names = tt$test$coefficients
+  pvalues = tt$test$pvalues
+  
+  write = rbind(names, pvalues)
+  #filestring = sprintf("C:/Users/IUP/Documents/R/VectorAnalysis/R Analysis data/%s.xlsx", levels(data$Metric)[k])
+  write.xlsx(t(write),filestring)
+  
+  print(tt)
+  
+  approximateTest = glht(fit1, linfct = mcp(Approximate = "Tukey"))
+  tt = summary(approximateTest)
+  
+  names = names(tt$test$coefficients)
+  estimates = as.numeric(tt$test$coefficients)
+  pvalues = tt$test$pvalues
+  
+  write = rbind(names, estimates, pvalues)
+  #filestring = sprintf("C:/Users/IUP/Documents/R/VectorAnalysis/R Analysis data/%s.xlsx", levels(data$Metric)[k])
+  write.xlsx(t(write),filestring)
+  
+  
+  print(tt)
+  
+  k = k+1
+}
